@@ -9,4 +9,4 @@ RUN git clone https://github.com/PantsuDango/DangoOCR.git /app
 
 WORKDIR /app
 
-ENTRYPOINT python app.py --host $OCR_HOST --path $OCR_PATH
+ENTRYPOINT python app.py --disable-image-path --host $OCR_HOST --path $OCR_PATH
