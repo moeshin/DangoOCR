@@ -5,7 +5,9 @@ ENV OCR_PATH=/orc/api
 
 EXPOSE 6666
 
-RUN git clone https://github.com/PantsuDango/DangoOCR.git /app
+RUN mkdir /root/app
+COPY .git /root/app/.git
+RUN git clone --single-branch /root/app /app && rm -rf /root/app
 
 WORKDIR /app
 
