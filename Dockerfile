@@ -1,7 +1,7 @@
 FROM moeshin/dango-ocr:runtime
 
 ENV OCR_HOST=0.0.0.0
-ENV OCR_PATH=/orc/api
+ENV OCR_PATH=/ocr/api
 
 EXPOSE 6666
 
